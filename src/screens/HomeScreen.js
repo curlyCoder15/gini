@@ -134,6 +134,7 @@ const HomeScreen = ({navigation}) => {
               platform={'ios'}
               onChangeText={value => updateSearch(value)}
               value={searchText}
+              onCancel={() => setTypeSearch('')}
             />
             <FlatList
               style={{paddingHorizontal: 15, marginTop: 7}}
